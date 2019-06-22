@@ -1,0 +1,9 @@
+body {
+	Font-family: courier;
+	color: #1a1a1a; /* almost full black */
+	background-color: #f2f2f2; /* light gray */
+}
+
+h1, h2 {
+	color: green;
+}
