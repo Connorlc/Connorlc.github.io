@@ -1,9 +1,42 @@
-body {
-	Font-family: courier;
-	color: #1a1a1a; /* almost full black */
-	background-color: #f2f2f2; /* light gray */
+html, body {
+	height: 100%;
 }
 
-h1, h2 {
-	color: green;
+body {
+	Font-family: courier;
+	color: #1a1a1a; /* black, 10% */
+	background-color: #f2f2f2; /* black, 95% */
+}
+
+h2 {
+	color: #00cc00; /* green, 40% */
+}
+
+.githubImage {
+	margin: 0px 10px 0px 10px;
+	box-shadow: 0px 0px 5px black;/*#b3b3ff; /* blue, 75% */
+}
+
+#navbar {
+	padding: 15px;
+	background-color: #1a1a1a; /* black, 10% */
+}
+
+a:link.navbarLink, a:visited.navbarLink, a:hover.navbarLink, a:visited.navbarLink {
+	margin: -5px;
+	padding: 15px;
+	color: white;
+	text-decoration: none;
+}
+
+a:link.navbarLink, a:visited.navbarLink {
+	background-color: #1a1a1a; /* black, 10% */
+}
+
+a:hover.navbarLink {
+	background-color: #404040; /* black, 25% */
+}
+
+a:active.navbarLink {
+	background-color: #808080; /* black, 50% */
 }
