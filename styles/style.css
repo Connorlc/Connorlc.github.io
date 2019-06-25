@@ -1,42 +1,90 @@
+/*
+---HEX---	--COLOR--	-PERCENT-
+#1a1a1a		black		10%
+#e6e6e6		black		90%
+#00cc00		green		40%
+#404040		black		25%
+#cccccc		black		80%
+*/
+ 
 html, body {
+	margin: 0px;
 	height: 100%;
 }
 
 body {
-	Font-family: courier;
-	color: #1a1a1a; /* black, 10% */
-	background-color: #f2f2f2; /* black, 95% */
+	font-family: courier;
+	color: #1a1a1a;
+	background-color: #e6e6e6;
 }
 
 h2 {
-	color: #00cc00; /* green, 40% */
+	color: #00cc00;
+}
+
+section {
+	padding: 30px 0px 30px 0px;
+}
+
+.even-section {
+	
+	background-color: #cccccc;
 }
 
 .githubImage {
-	margin: 0px 10px 0px 10px;
-	box-shadow: 0px 0px 5px black;/*#b3b3ff; /* blue, 75% */
+	margin: 10px 10px 10px 10px;
+	box-shadow: 0px 0px 5px black;
 }
 
 #navbar {
-	padding: 15px;
-	background-color: #1a1a1a; /* black, 10% */
+	background-color: #1a1a1a;
 }
 
-a:link.navbarLink, a:visited.navbarLink, a:hover.navbarLink, a:visited.navbarLink {
+a:link.navbar-link, a:visited.navbar-link, a:hover.navbar-link, a:visited.navbar-link {
+	display: hidden;
 	margin: -5px;
 	padding: 15px;
-	color: white;
+	color: #e6e6e6;
 	text-decoration: none;
+	cursor: pointer;
+	background-color: 1a1a1a;
 }
 
-a:link.navbarLink, a:visited.navbarLink {
-	background-color: #1a1a1a; /* black, 10% */
+.drop-button {
+	background-color: #1a1a1a;
+	color: #e6e6e6;
+	padding: 15px;
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
 }
 
-a:hover.navbarLink {
-	background-color: #404040; /* black, 25% */
+.dropdown {
+	position: relative;
+	display: inline-block;
 }
 
-a:active.navbarLink {
-	background-color: #808080; /* black, 50% */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #1a1a1a;
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: #blue;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #404040;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .drop-button {
+	background-color: #404040;
 }
