@@ -4,38 +4,7 @@
 #e6e6e6		black		90%
 #00cc00		green		40%
 #404040		black		25%
-#cccccc		black		80%
 */
- 
-html, body {
-	margin: 0px;
-	height: 100%;
-}
-
-body {
-	font-family: courier;
-	color: #1a1a1a;
-	background-color: #e6e6e6;
-}
-
-h2 {
-	color: #00cc00;
-}
-
-section {
-	padding: 30px 0px 30px 0px;
-}
-
-.even-section {
-	
-	background-color: #cccccc;
-}
-
-.githubImage {
-	margin: 10px 10px 10px 10px;
-	box-shadow: 0px 0px 5px black;
-	border-radius: 7px
-}
 
 #navbar {
 	background-color: #1a1a1a;
@@ -73,7 +42,6 @@ a:link.navbar-link, a:visited.navbar-link, a:hover.navbar-link, a:visited.navbar
 }
 
 .dropdown-content a {
-	color: #blue;
 	text-decoration: none;
 	display: block;
 }

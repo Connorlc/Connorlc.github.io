@@ -1,0 +1,30 @@
+/*
+---HEX---	--COLOR--	-PERCENT-
+#1a1a1a		black		10%
+#e6e6e6		black		90%
+#00cc00		green		40%
+#cccccc		black		80%
+*/
+ 
+html, body {
+	margin: 0px;
+	height: 100%;
+}
+
+body {
+	font-family: courier;
+	color: #1a1a1a;
+	background-color: #e6e6e6;
+}
+
+h2 {
+	color: #00cc00;
+}
+
+section {
+	padding: 5px 0px 30px 0px;
+}
+
+.even-section {
+	background-color: #cccccc;
+}
