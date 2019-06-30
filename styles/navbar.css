@@ -8,10 +8,13 @@
 
 #navbar {
 	background-color: #1a1a1a;
+	position: fixed;
+	width: 135px;
+	height: 93%;
 }
 
 a:link.navbar-link, a:visited.navbar-link, a:hover.navbar-link, a:visited.navbar-link {
-	display: hidden;
+	display: block;
 	margin: -5px;
 	padding: 15px;
 	color: #e6e6e6;
@@ -31,7 +34,7 @@ a:link.navbar-link, a:visited.navbar-link, a:hover.navbar-link, a:visited.navbar
 
 .dropdown {
 	position: relative;
-	display: inline-block;
+	display: block;
 }
 
 .dropdown-content {
