@@ -1,26 +1,39 @@
 /*
+NOTE: lower percent means closer to listed color
+
 ---HEX---	--COLOR--	-PERCENT-
 #1a1a1a		black		10%
 #e6e6e6		black		90%
 #00cc00		green		40%
 #404040		black		25%
+#999999		black		60%
+#666666		black		40%
 */
 
 #navbar {
 	background-color: #1a1a1a;
 	position: fixed;
-	width: 135px;
-	height: 93%;
+	padding: 15px;
+	width: 100%;
+	margin: 0px;
 }
 
-a:link.navbar-link, a:visited.navbar-link, a:hover.navbar-link, a:visited.navbar-link {
-	display: block;
+a:link.navbar-link, a:visited.navbar-link, a:hover.navbar-link, a:active.navbar-link {
+	display: inline;
 	margin: -5px;
 	padding: 15px;
 	color: #e6e6e6;
 	text-decoration: none;
 	cursor: pointer;
 	background-color: 1a1a1a;
+}
+
+a:hover.navbar-link {
+	background-color: #666666;
+}
+
+a:active.navbar-link {
+	background-color: #999999;
 }
 
 .drop-button {
