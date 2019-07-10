@@ -20,7 +20,7 @@ NOTE: lower percent means closer to listed color
 
 a:link.navbar-link, a:visited.navbar-link, a:hover.navbar-link, a:active.navbar-link {
 	display: inline;
-	margin: -5px;
+	margin: 0;
 	padding: 15px;
 	color: #e6e6e6;
 	text-decoration: none;
@@ -36,6 +36,7 @@ a:active.navbar-link {
 	background-color: #999999;
 }
 
+/*
 .drop-button {
 	background-color: #1a1a1a;
 	color: #e6e6e6;
@@ -73,3 +74,4 @@ a:active.navbar-link {
 .dropdown:hover .drop-button {
 	background-color: #404040;
 }
+*/
