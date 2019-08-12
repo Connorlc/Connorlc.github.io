@@ -13,15 +13,14 @@ NOTE: lower percent means closer to listed color
 #navbar {
 	background-color: #1a1a1a;
 	position: fixed;
-	padding: 15px;
 	width: 100%;
-	margin: 0px;
+  text-align: center;
 }
 
 a:link.navbar-link, a:visited.navbar-link, a:hover.navbar-link, a:active.navbar-link {
-	display: inline;
+	display: inline-block;
 	margin: 0;
-	padding: 15px;
+	padding: 12px 8px 12px 8px;
 	color: #e6e6e6;
 	text-decoration: none;
 	cursor: pointer;

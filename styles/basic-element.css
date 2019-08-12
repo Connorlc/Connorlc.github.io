@@ -39,9 +39,11 @@ main {
 }
 
 h1 {
-	padding: 20px 0px 0px 0px;
+	padding: 20px 0px 20px 0px;
+  margin: 15px -15px 15px -15px;
 	text-align: center;
 	vertical-align: middle;
+  background-color: #e6e6e6;
 }
 
 h2 {
