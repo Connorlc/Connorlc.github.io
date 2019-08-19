@@ -10,16 +10,23 @@ NOTE: lower percent means closer to listed color
 #666666		black		40%
 */
 
-#navbar {
+#navbar-horizontal {
 	background-color: #1a1a1a;
 	position: fixed;
 	width: 100%;
   text-align: center;
 }
 
-a:link.navbar-link, a:visited.navbar-link, a:hover.navbar-link, a:active.navbar-link {
+#navbar-vertical {
+  background-color: #1a1a1a;
+  position: fixed;
+  height: auto;
+  top: 86px;
+}
+
+.navbar-link {
 	display: inline-block;
-	margin: 0;
+  margin: 0px -2px 0px -2px;
 	padding: 12px 8px 12px 8px;
 	color: #e6e6e6;
 	text-decoration: none;
@@ -32,6 +39,23 @@ a:hover.navbar-link {
 }
 
 a:active.navbar-link {
+	background-color: #999999;
+}
+
+.navbar-button {
+  display: block;
+  padding: 6px 4px 6px 4px;
+  color: #e6e6e6;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #1a1a1a;
+}
+
+a:hover.navbar-button {
+	background-color: #666666;
+}
+
+a:active.navbar-button {
 	background-color: #999999;
 }
 
