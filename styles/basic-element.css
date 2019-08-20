@@ -1,11 +1,11 @@
 /*
 NOTE: lower percent means closer to listed color
 
----HEX---	--COLOR--	-PERCENT-
-#1a1a1a		black		10%
-#e6e6e6		black		90%
-#00cc00		green		40%
-#cccccc		black		80%
+---HEX---	--COLOR--	---USE---
+#1a1a1a   black     body text
+#e6e6e6   black     body background
+#00cc00   green     h2's
+#cccccc   black     section background
 */
  
 html, body {

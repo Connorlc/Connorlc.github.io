@@ -1,13 +1,13 @@
 /*
 NOTE: lower percent means closer to listed color
 
----HEX---	--COLOR--	-PERCENT-
-#1a1a1a		black		10%
-#e6e6e6		black		90%
-#00cc00		green		40%
-#404040		black		25%
-#999999		black		60%
-#666666		black		40%
+---HEX---	--COLOR--	---USE---
+#1a1a1a   black     navbar background
+#e6e6e6   black     navbar links
+#4caf50   green     current navbar tab
+#404040   black     
+#999999   black     navbar links a:active
+#666666   black     navbar links a:hover
 */
 
 #navbar-horizontal {
@@ -36,10 +36,13 @@ NOTE: lower percent means closer to listed color
 
 a:hover.navbar-link {
 	background-color: #666666;
+  color: #e6e6e6;
 }
 
 a:active.navbar-link {
 	background-color: #999999;
+  
+  color: #e6e6e6;
 }
 
 .navbar-button {
@@ -57,6 +60,11 @@ a:hover.navbar-button {
 
 a:active.navbar-button {
 	background-color: #999999;
+}
+
+.current {
+  background-color: #4caf50;
+  color: black;
 }
 
 /*
