@@ -58,3 +58,29 @@ section {
 .nav-id {
 	padding: 50px 0px 0px 0px;
 }
+
+form {
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+}
+
+select {
+  border: none;
+  display: block;
+  border-radius: 5px;
+  background-color: #cccccc;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 4px;
+  min-width: 100px;
+}
+
+.filter {
+  border-radius: 5px;
+  background-color: white;
+  width: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+}
