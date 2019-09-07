@@ -1,6 +1,4 @@
 /*
-NOTE: lower percent means closer to listed color
-
 ---HEX---	--COLOR--	---USE---
 #1a1a1a   black     body text
 #e6e6e6   black     body background
@@ -61,8 +59,8 @@ section {
 
 form {
   display: inline-block;
-  width: 49%;
   text-align: center;
+  width: 47%;
 }
 
 select {
@@ -74,6 +72,12 @@ select {
   margin-left: auto;
   padding: 4px;
   min-width: 100px;
+}
+
+input[type=button] {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #e6e6e6;
 }
 
 .filter {
