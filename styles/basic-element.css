@@ -71,7 +71,7 @@ select {
   margin-right: auto;
   margin-left: auto;
   padding: 4px;
-  min-width: 100px;
+  width: 70px;
 }
 
 input[type=button] {
@@ -83,7 +83,7 @@ input[type=button] {
 .filter {
   border-radius: 5px;
   background-color: white;
-  width: 100px;
+  width: 70px;
   margin-right: auto;
   margin-left: auto;
   padding: 10px;
