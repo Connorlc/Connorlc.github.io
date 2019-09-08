@@ -60,7 +60,6 @@ section {
 form {
   display: inline-block;
   text-align: center;
-  width: 47%;
 }
 
 select {
@@ -71,11 +70,11 @@ select {
   margin-right: auto;
   margin-left: auto;
   padding: 4px;
-  width: 70px;
+  width: 50px;
 }
 
 input[type=button] {
-  padding: 5px;
+  padding: 13px 8px 13px 8px;
   border-radius: 5px;
   background-color: #e6e6e6;
 }
@@ -83,7 +82,7 @@ input[type=button] {
 .filter {
   border-radius: 5px;
   background-color: white;
-  width: 70px;
+  width: 50px;
   margin-right: auto;
   margin-left: auto;
   padding: 10px;
