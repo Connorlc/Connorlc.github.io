@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="styles/flexbox.css">
 </head>
 
-<body>
+<body onload="showSelected('All', 'All')">
   <header>
     <nav>		
       <div id="navbar-horizontal">
@@ -73,6 +73,10 @@
         </div>
       </form>
       <input type="button" onclick="filterCourses()" value="Filter">
+      </br>
+      </br>
+      <span id="selected-lang"></span>
+      <span id="selected-type"></span>
       </br>
       </br>
       
@@ -283,7 +287,7 @@
       </br>
 					
       <h3>Related Courses</h3>
-      <dl>
+      <dl class="card-flex">
         <div class="card course core">
           <div class="card-title">
             <p><b>Calculus A (engineering series)</b></p>

@@ -1,10 +1,11 @@
 function filterCourses() {
   var lang = getLanguage();
-  var curric = getCurriculum();
+  var type = getType();
   var courses = document.getElementsByClassName("course");
   
+  showSelected(lang, type);
   resetCourses(courses);
-  modifyDisplays(lang.toLowerCase(), curric.toLowerCase(), courses);
+  modifyDisplays(lang.toLowerCase(), type.toLowerCase(), courses);
 }
 
 function getLanguage() {
@@ -12,9 +13,14 @@ function getLanguage() {
   return langSelect.options[langSelect.selectedIndex].text;
 }
 
-function getCurriculum() {
+function getType() {
   var currSelect = document.getElementById("type");
   return currSelect.options[currSelect.selectedIndex].text;
+}
+
+function showSelected(lang, type) {
+  document.getElementById("selected-lang").innerHTML = "Lang = " + lang;
+  document.getElementById("selected-type").innerHTML = "Type = " + type;
 }
 
 function resetCourses(courses) {
@@ -23,20 +29,20 @@ function resetCourses(courses) {
   }
 }
 
-function modifyDisplays(lang, curric, courses) {
+function modifyDisplays(lang, type, courses) {
   for(var i = 0; i < courses.length; i++) {
-    if(lang == "all" && curric == "all") {
+    if(lang == "all" && type == "all") {
       return;
     } else if(lang == "all") {
-      if(!courses[i].className.includes(curric)) {
+      if(!courses[i].className.includes(type)) {
         courses[i].style.display = "none";
       }
-    } else if(curric == "all") {
+    } else if(type == "all") {
       if(!courses[i].className.includes(lang)) {
         courses[i].style.display = "none";
       }
     } else if(!courses[i].className.includes(lang) 
-              || !courses[i].className.includes(curric)) {
+              || !courses[i].className.includes(type)) {
       courses[i].style.display = "none";
     }
   }

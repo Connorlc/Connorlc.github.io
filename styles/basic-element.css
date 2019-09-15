@@ -94,3 +94,13 @@ input[type=button] {
   margin-right: auto;
   max-width: 100%;
 }
+
+#selected-lang {
+  display: inline;
+  padding: 0px 15px 0px 0px;
+}
+
+#selected-type {
+  display: inline;
+  padding: 0px 0px 0px 15px;
+}
