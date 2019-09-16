@@ -15,6 +15,7 @@ NOTE: lower percent means closer to listed color
 	position: fixed;
 	width: 100%;
   text-align: center;
+  z-index: 1;
 }
 
 #navbar-vertical {
@@ -22,6 +23,7 @@ NOTE: lower percent means closer to listed color
   position: fixed;
   height: auto;
   top: 86px;
+  z-index: 1;
 }
 
 .navbar-link {
