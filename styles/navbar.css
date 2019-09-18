@@ -1,17 +1,15 @@
 /*
-NOTE: lower percent means closer to listed color
-
----HEX---	--COLOR--	---USE---
-#1a1a1a   black     navbar background
-#e6e6e6   black     navbar links
-#4caf50   green     current navbar tab
-#404040   black     
-#999999   black     navbar links a:active
-#666666   black     navbar links a:hover
+-----RGB-----	 --COLOR--	---USE---
+26 , 26 , 26   black      navbar background
+230, 230, 230  white      navbar links
+78 , 177, 81   green      current navbar tab
+64 , 64 , 64   black     
+153, 153, 153  gray       navbar links a:active
+102, 102, 102  gray      navbar links a:hover
 */
 
 #navbar-horizontal {
-	background-color: #1a1a1a;
+	background-color: rgb(26, 26, 26);
 	position: fixed;
 	width: 100%;
   text-align: center;
@@ -19,7 +17,7 @@ NOTE: lower percent means closer to listed color
 }
 
 #navbar-vertical {
-  background-color: #1a1a1a;
+  background-color: rgb(26, 26, 26);
   position: fixed;
   height: auto;
   top: 86px;
@@ -30,49 +28,48 @@ NOTE: lower percent means closer to listed color
 	display: inline-block;
   margin: 0px -2px 0px -2px;
 	padding: 12px 8px 12px 8px;
-	color: #e6e6e6;
+	color: rgb(230, 230, 230);
 	text-decoration: none;
 	cursor: pointer;
-	background-color: 1a1a1a;
+	background-color: rgb(26, 26, 26);
 }
 
 a:hover.navbar-link {
-	background-color: #666666;
-  color: #e6e6e6;
+	background-color: rgb(102, 102, 102);
+  color: rgb(230, 230, 230);
 }
 
 a:active.navbar-link {
-	background-color: #999999;
-  
-  color: #e6e6e6;
+	background-color: rgb(153, 153, 153);
+  color: rgb(230, 230, 230);
 }
 
 .navbar-button {
   display: block;
   padding: 6px 4px 6px 4px;
-  color: #e6e6e6;
+  color: rgb(230, 230, 230);
   text-decoration: none;
   cursor: pointer;
-  background-color: #1a1a1a;
+  background-color: rgb(26, 26, 26);
 }
 
 a:hover.navbar-button {
-	background-color: #666666;
+	background-color: rgb(102, 102, 102);
 }
 
 a:active.navbar-button {
-	background-color: #999999;
+	background-color: rgb(153, 153, 153);
 }
 
 .current {
-  background-color: #4caf50;
+  background-color: rgb(78, 177, 81);
   color: black;
 }
 
 /*
 .drop-button {
-	background-color: #1a1a1a;
-	color: #e6e6e6;
+	background-color: rgb(26, 26, 26);
+	color: rgb(230, 230, 230);
 	padding: 15px;
 	border: none;
 	cursor: pointer;
@@ -87,7 +84,7 @@ a:active.navbar-button {
 .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: #1a1a1a;
+	background-color: rgb(26, 26, 26);
 	z-index: 1;
 }
 
@@ -97,7 +94,7 @@ a:active.navbar-button {
 }
 
 .dropdown-content a:hover {
-	background-color: #404040;
+	background-color: rgb(64, 64, 64);
 }
 
 .dropdown:hover .dropdown-content {
@@ -105,6 +102,6 @@ a:active.navbar-button {
 }
 
 .dropdown:hover .drop-button {
-	background-color: #404040;
+	background-color: rgb(64, 64, 64);
 }
 */

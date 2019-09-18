@@ -1,9 +1,9 @@
 /*
----HEX---	--COLOR--	---USE---
-#1a1a1a   black     body text
-#e6e6e6   black     body background
-#00cc00   green     h2's
-#cccccc   black     section background
+-----RGB-----	 --COLOR--	---USE---
+26 , 26 , 26   black      body text
+230, 230, 230  white      body background
+0  , 204, 0    green      h2's
+204, 204, 204  white      section background
 */
  
 html, body {
@@ -14,8 +14,8 @@ html, body {
 
 body {
 	font-family: arial, sans-serif;
-	color: #1a1a1a;
-	background-color: #e6e6e6;
+	color: rgb(26, 26, 26);
+	background-color: rgb(230, 230, 230);
 }
 
 .bg {
@@ -41,16 +41,16 @@ h1 {
   margin: 15px -15px 15px -15px;
 	text-align: center;
 	vertical-align: middle;
-  background-color: #e6e6e6;
+  background-color: rgb(230, 230, 230);
 }
 
 h2 {
-	color: #00cc00;
+	color: rgb(0, 204, 0);
 }
 
 section {
 	padding: 5px 15px 30px 15px;
-	background-color: #cccccc;
+	background-color: rgb(204, 204, 204);
 }
 
 .nav-id {
@@ -66,7 +66,7 @@ select {
   border: none;
   display: block;
   border-radius: 5px;
-  background-color: #cccccc;
+  background-color: rgb(204, 204, 204);
   margin-right: auto;
   margin-left: auto;
   padding: 4px;
@@ -76,7 +76,7 @@ select {
 input[type=button] {
   padding: 13px 8px 13px 8px;
   border-radius: 5px;
-  background-color: #e6e6e6;
+  background-color: rgb(230, 230, 230);
 }
 
 .filter {
