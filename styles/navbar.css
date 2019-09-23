@@ -61,7 +61,7 @@ a:active.navbar-button {
 	background-color: rgb(153, 153, 153);
 }
 
-.current {
+.current-tab {
   background-color: rgb(78, 177, 81);
   color: black;
 }
