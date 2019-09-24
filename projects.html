@@ -128,19 +128,19 @@
         <div class="card">
           <div class="card-title">Tic Tac Toe Draw</div>
           <img class="card-img" onclick="openModal('ttt'); showSlide(1, 'ttt');" 
-               src="images/ttt-draw.png" alt="Tic Tac Toe Draw"></a>
+               src="images/ttt-draw.png" alt="Tic Tac Toe Draw">
         </div>
         
         <div class="card">
           <div class="card-title">Tic Tac Toe Win</div>
           <img class="card-img" onclick="openModal('ttt'); showSlide(2, 'ttt');" 
-               src="images/ttt-win.png" alt="Tic Tac Toe Win"></a>
+               src="images/ttt-win.png" alt="Tic Tac Toe Win">
         </div>
         
         <div class="card">
           <div class="card-title">Tic Tac Toe Ongoing</div>
           <img class="card-img" onclick="openModal('ttt'); showSlide(3, 'ttt');" 
-               src="images/ttt-ongoing.png" alt="Tic Tac Toe Ongoing Game"></a>
+               src="images/ttt-ongoing.png" alt="Tic Tac Toe Ongoing Game">
         </div>
       </div>
       
@@ -201,27 +201,53 @@
       <div class="card-flex">
         <div class="card">
           <div class="card-title">Bezier Curve Generator</div>
-          <a href="images/bezier-demo.gif" alt="Bezier Demo">
-          <img class="card-img" src="images/bezier-demo.gif" alt="Bezier Demo"></a>
+          <img class="card-img" onclick="openModal('bezier'); showSlide(1, 'bezier');" 
+               src="images/bezier-demo.gif" alt="Bezier Curve Generator">
         </div>
         
         <div class="card">
-          <div class="card-title">Z-Buffer Implementation</div>
-          <a href="images/zbuffer-demo.png" alt="Z-Buffer Demo">
-          <img class="card-img" src="images/zbuffer-demo.png" alt="Z-Buffer Demo"></a>
+          <div class="card-title">Z-Buffer Demo</div>
+          <img class="card-img" onclick="openModal('zbuff'); showSlide(1, 'zbuff');"
+               src="images/zbuffer-demo.png" alt="Z-Buffer Demo">
         </div>
       </div>
       
-<!--      
-      <div id="modal" class="modal">
-        <span id="close" class="close">&times;</span>
-        <div id="modal-title" class="modal-title"></div>
-        <img id="modal-img" class="modal-img">
-        <div id="modal-caption" class="modal-caption">
-          pobo
+      <div id="bezier-modal" class="modal">
+        <span class="close" onclick="closeModal('bezier')">&times;</span>
+        <div class="modal-content">
+          <div class="bezier-slide">
+            <div class="slide-title">Bezier Curve Generator</div>
+            <img class="bezier-img" src="images/bezier-demo.gif" alt="Bezier Curve Generator">
+            <div class="slide-info">
+              Bezier curves are stitched together and forced to maintain C1 
+              continuity. All control points are selectable for modification 
+              with the GUI. Powered by OpenGL.
+            </div>
+          </div>
         </div>
       </div>
--->
+      
+      <!-- allows landscape screens to scroll to the bottom -->
+      </br></br></br></br></br>
+      </br></br></br></br></br>
+      
+      <div id="zbuff-modal" class="modal">
+        <span class="close" onclick="closeModal('zbuff')">&times;</span>
+        <div class="modal-content">
+          <div class="zbuff-slide">
+            <div class="slide-title">Z-Buffer Demo</div>
+            <img class="zbuff-img" src="images/zbuffer-demo.png" alt="Z-Buffer Demo">
+            <div class="slide-info">
+              Calculates the z-index of each pixel in all polygons and uses 
+              it to display the "closest" polygon if multiple polygons overlap.
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- allows landscape screens to scroll to the bottom -->
+      </br></br></br></br></br>
+      </br></br></br></br></br>
       
       </br>
       </br>

@@ -7,7 +7,7 @@
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 50px;
   top: 0;
   left: 0;
   width: 100%;
@@ -90,7 +90,9 @@
 }
 
 .map-slide,
-.ttt-slide {
+.ttt-slide,
+.bezier-slide,
+.zbuff-slide {
   position: relative;
   display: none;
 }
@@ -114,7 +116,9 @@
 }
 
 .map-img,
-.ttt-img {
+.ttt-img,
+.bezier-img,
+.zbuff-img {
   position: relative;
   margin: auto;
   width: 100%;
