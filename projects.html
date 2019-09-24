@@ -50,33 +50,33 @@
       <div class="card-flex">
         <div class="card">
           <div class="card-title">Random Map 1</div>
-          <img class="card-img" onclick="openModal('map-modal'); showSlide(1);" 
+          <img class="card-img" onclick="openModal('map'); showSlide(1, 'map');" 
                src="images/unity-map1.png" alt="Random Map 1">
         </div>
         
         <div class="card">
           <div class="card-title">Random Map 2</div>
-          <img class="card-img" onclick="openModal('map-modal'); showSlide(2);" 
+          <img class="card-img" onclick="openModal('map'); showSlide(2, 'map');" 
                src="images/unity-map2.png" alt="Random Map 2">
         </div>
         
         <div class="card">
           <div class="card-title">Random Map 3</div>
-          <img class="card-img" onclick="openModal('map-modal'); showSlide(3);" 
+          <img class="card-img" onclick="openModal('map'); showSlide(3, 'map');" 
                src="images/unity-map3.png" alt="Random Map 3">
         </div>
       </div>
       
       <div id="map-modal" class="modal">
-        <span class="close" onclick="closeModal('map-modal')">&times;</span>
+        <span class="close" onclick="closeModal('map')">&times;</span>
         <div class="modal-content">
-          <span id="map-prev" class="prev" onclick="changeSlide(-1)">&#10094;</span>
-          <span id="map-next" class="next" onclick="changeSlide(1)">&#10095;</span>
+          <span id="map-prev" class="prev" onclick="changeSlide(-1, 'map')">&#10094;</span>
+          <span id="map-next" class="next" onclick="changeSlide(1, 'map')">&#10095;</span>
           
           <div class="map-slide">
             <div class="slide-num">1 / 3</div>
             <div class="slide-title">Random Map 1</div>
-            <img class="slide-img" src="images/unity-map1.png" alt="Random Map 1">
+            <img class="map-img" src="images/unity-map1.png" alt="Random Map 1">
             <div class="slide-info">
               Used <abbr title="Random Number Generation">RNG</abbr> when placing 
               each tile to decide if it was occupied. If occupied, used RNG to 
@@ -87,7 +87,7 @@
           <div class="map-slide">
             <div class="slide-num">2 / 3</div>
             <div class="slide-title">Random Map 2</div>
-            <img class="slide-img" src="images/unity-map2.png" alt="Random Map 2">
+            <img class="map-img" src="images/unity-map2.png" alt="Random Map 2">
             <div class="slide-info">
               Used <abbr title="Random Number Generation">RNG</abbr> when placing 
               each tile to decide if it was occupied. If occupied, used RNG to 
@@ -98,7 +98,7 @@
           <div class="map-slide">
             <div class="slide-num">3 / 3</div>
             <div class="slide-title">Random Map 3</div>
-            <img class="slide-img" src="images/unity-map3.png" alt="Random Map 3">
+            <img class="map-img" src="images/unity-map3.png" alt="Random Map 3">
             <div class="slide-info">
               Used <abbr title="Random Number Generation">RNG</abbr> when placing 
               each tile to decide if it was occupied. If occupied, used RNG to 
@@ -107,11 +107,11 @@
           </div>
           
           <div class="slide-preview">
-            <img class="map-thumb" onclick="showSlide(1)" 
+            <img class="map-thumb" onclick="showSlide(1, 'map')" 
                  src="images/unity-map1.png" alt="Random Map 1">
-            <img class="map-thumb" onclick="showSlide(2)" 
+            <img class="map-thumb" onclick="showSlide(2, 'map')" 
                  src="images/unity-map2.png" alt="Random Map 2">
-            <img class="map-thumb" onclick="showSlide(3)" 
+            <img class="map-thumb" onclick="showSlide(3, 'map')" 
                  src="images/unity-map3.png" alt="Random Map 3">
           </div>
           
@@ -127,20 +127,71 @@
       <div class="card-flex">
         <div class="card">
           <div class="card-title">Tic Tac Toe Draw</div>
-          <a href="images/tictactoe-draw.png" alt="draw">
-          <img class="card-img" src="images/tictactoe-draw.png" alt="Draw"></a>
+          <img class="card-img" onclick="openModal('ttt'); showSlide(1, 'ttt');" 
+               src="images/ttt-draw.png" alt="Tic Tac Toe Draw"></a>
         </div>
         
         <div class="card">
           <div class="card-title">Tic Tac Toe Win</div>
-          <a href="images/tictactoe-win.png" alt="win">
-          <img class="card-img" src="images/tictactoe-win.png" alt="Win"></a>
+          <img class="card-img" onclick="openModal('ttt'); showSlide(2, 'ttt');" 
+               src="images/ttt-win.png" alt="Tic Tac Toe Win"></a>
         </div>
         
         <div class="card">
           <div class="card-title">Tic Tac Toe Ongoing</div>
-          <a href="images/tictactoe-ongoing.png" alt="ongoing">
-          <img class="card-img" src="images/tictactoe-ongoing.png" alt="Ongoing Game"></a>
+          <img class="card-img" onclick="openModal('ttt'); showSlide(3, 'ttt');" 
+               src="images/ttt-ongoing.png" alt="Tic Tac Toe Ongoing Game"></a>
+        </div>
+      </div>
+      
+      <div id="ttt-modal" class="modal">
+        <span class="close" onclick="closeModal('ttt')">&times;</span>
+        <div class="modal-content">
+          <span id="ttt-prev" class="prev" onclick="changeSlide(-1, 'ttt')">&#10094;</span>
+          <span id="ttt-next" class="next" onclick="changeSlide(1, 'ttt')">&#10095;</span>
+          
+          <div class="ttt-slide">
+            <div class="slide-num">1 / 3</div>
+            <div class="slide-title">Tic Tac Toe Draw</div>
+            <img class="ttt-img" src="images/ttt-draw.png" alt="Tic Tac Toe Draw">
+            <div class="slide-info">
+              The game has ended, text indicates it was a draw, and the game 
+              board has been grayed-out.
+            </div>
+          </div>
+          
+          <div class="ttt-slide">
+            <div class="slide-num">2 / 3</div>
+            <div class="slide-title">Tic Tac Toe Win</div>
+            <img class="ttt-img" src="images/ttt-win.png" alt="Tic Tac Toe Win">
+            <div class="slide-info">
+              The game has ended, text indicates that player X is the winner, 
+              and the game board has been grayed-out.
+            </div>
+          </div>
+          
+          <div class="ttt-slide">
+            <div class="slide-num">3 / 3</div>
+            <div class="slide-title">Tic Tac Toe Ongoing Game</div>
+            <img class="ttt-img" src="images/ttt-ongoing.png" alt="Tic Tac Toe Ongoing Game">
+            <div class="slide-info">
+              The game has not been finished, and the available tiles on the 
+              game board are highlighted in blue.
+            </div>
+          </div>
+          
+          <div class="slide-preview">
+            <img class="ttt-thumb" onclick="showSlide(1, 'ttt')" 
+                 src="images/ttt-draw.png" alt="Tic tac Toe Draw">
+            <img class="ttt-thumb" onclick="showSlide(2, 'ttt')" 
+                 src="images/ttt-win.png" alt="Tic tac Toe Win">
+            <img class="ttt-thumb" onclick="showSlide(3, 'ttt')" 
+                 src="images/ttt-ongoing.png" alt="Tic tac Toe Ongoing">
+          </div>
+          
+          <!-- allows landscape screens to scroll to the bottom -->
+          </br></br></br></br></br>
+          </br></br></br></br></br>
         </div>
       </div>
       </br>

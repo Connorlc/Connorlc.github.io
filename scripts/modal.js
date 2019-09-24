@@ -1,24 +1,24 @@
 var slideIndex = 1;
 
 function openModal(name) {
-  document.getElementById(name).style.display = "block";
+  document.getElementById(name + "-modal").style.display = "block";
 }
 
 function closeModal(name) {
-  document.getElementById(name).style.display = "none";
+  document.getElementById(name + "-modal").style.display = "none";
 }
 
-function changeSlide(n) {
-  showSlide(slideIndex + n);
+function changeSlide(n, name) {
+  showSlide(slideIndex + n, name);
 }
 
-function showSlide(n) {
+function showSlide(n, name) {
   slideIndex = n;
-  var slides = document.getElementsByClassName("map-slide");
-  var thumbs = document.getElementsByClassName("map-thumb");
-  var imgs = document.getElementsByClassName("slide-img");
-  var prev = document.getElementById("map-prev");
-  var next = document.getElementById("map-next");
+  var slides = document.getElementsByClassName(name + "-slide");
+  var thumbs = document.getElementsByClassName(name + "-thumb");
+  var imgs = document.getElementsByClassName(name + "-img");
+  var prev = document.getElementById(name + "-prev");
+  var next = document.getElementById(name + "-next");
   
   if(n > slides.length) { slideIndex = 1; }
   if(n < 1) { slideIndex = slides.length; }
